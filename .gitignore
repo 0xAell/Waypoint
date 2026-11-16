@@ -1,0 +1,72 @@
+# Waypoint holds links, metadata and a little code. Nothing below belongs in it.
+
+# Audio, stems and video
+*.wav
+*.flac
+*.mp3
+*.m4a
+*.aac
+*.ogg
+*.opus
+*.aif
+*.aiff
+*.mp4
+*.mov
+*.mkv
+*.webm
+*.avi
+stems/
+masters/
+media/
+
+# Artwork, covers and frames
+*.jpg
+*.jpeg
+*.png
+*.webp
+*.gif
+*.tif
+*.tiff
+*.psd
+artwork/
+covers/
+thumbnails/
+
+# Lyrics, translations and captions
+lyrics/
+translations/
+*.lrc
+*.srt
+*.vtt
+*.ass
+*.ssa
+
+# Renders and other outputs
+out/
+output/
+outputs/
+renders/
+dist/
+build/
+*.zip
+*.tar
+*.tar.gz
+
+# Secrets and local settings
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+credentials*.json
+client_secret*.json
+cookies*.txt
+*.cookies
+
+# Tooling and system files
+node_modules/
+.DS_Store
+Thumbs.db
+*.log
