@@ -79,7 +79,7 @@ export function readCatalog(directory = catalogDir) {
   return { entries, problems: found };
 }
 
-const cell = (text) => String(text).replace(/\|/g, '\\|');
+const cell = (text) => String(text).replace(/[\\|]/g, (character) => `&#${character.charCodeAt(0)};`);
 
 /** The catalog as a Markdown table. */
 export function table(entries) {
